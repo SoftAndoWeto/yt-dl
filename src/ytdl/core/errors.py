@@ -1,18 +1,18 @@
-class BaseError(Exception):
+class CoreError(Exception):
     pass
 
 
-class NoUrlFound(BaseError):
+class NoUrlFound(CoreError):
     pass
 
 
-class UnsupportedUrl(BaseError):
+class UnsupportedUrl(CoreError):
     pass
 
 
-class InvalidUrl(BaseError):
+class InvalidUrl(CoreError):
     pass
 
 
-class DownloadedFailed(BaseError):
+class DownloadFailed(CoreError):
     pass

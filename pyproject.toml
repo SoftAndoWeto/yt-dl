@@ -4,7 +4,9 @@ version = "0.1.0"
 description = "bot for download youtube shorts"
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "strenum>=0.4.15",
+]
 
 [build-system]
 requires = ["hatchling"]

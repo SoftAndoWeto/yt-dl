@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 from pathlib import Path
 
-from ytdl.core.types import Transport, Provider, VideoKind
+from ytdl.core.enums import Transport, Provider, VideoKind
 
 
 @dataclass(frozen=True)
@@ -19,7 +19,7 @@ class DownloadRequest:
 
 @dataclass(frozen=True)
 class VideoUrl:
-    video_id: str | None
+    video_id: str
     original_url: str
     normalized_url: str
     provider: Provider
@@ -39,4 +39,4 @@ class DownloadResult:
     url: VideoUrl
     file: DownloadedFile
     title: str | None
-    duration_sec: int | None
+    duration_seconds: int | None

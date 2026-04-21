@@ -1,5 +1,5 @@
 [project]
-name = "yt-dl"
+name = "ytdl"
 version = "0.0.2"
 description = "bot for download youtube shorts"
 readme = "README.md"
